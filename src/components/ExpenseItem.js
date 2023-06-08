@@ -1,12 +1,17 @@
 import './ExpenseItem.css'
 
 function ExpenseItem() {
+  const expenseDate = new Date(2021, 2, 28);
+  const expenseTitle = "My House";
+  const expenseAmount = 234.56;
+
   return (
       <div className="expense-item">
-        <div>Date today 8 June 2023</div>
+        <div>{expenseDate.toISOString()}</div>
         <div className="expense-item__description">
-          <h2>New Car</h2>
-          <div className="expense-item__price">$100.50</div>
+          <h2>{expenseTitle}</h2>
+          <h2>{Math.random()}</h2>
+          <div className="expense-item__price">${expenseAmount}</div>
         </div>
       </div>
   );
