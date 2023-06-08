@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h3>hola</h3>
       <p>mundo</p>
-      <ExpenseItem/>gi
+      <ExpenseItem/>
     </div>
   );
 }
